@@ -64,10 +64,29 @@ reset()
 
 screen= turtle.Screen()
 t=turtle.Turtle()
-t.color("white")
+t.color("green")
 t.hideturtle()
 
 t.penup()
 t.goto(-100,0)
-t.write ("I'm Michael",font=("Arial",48,"normal"))
+t.write ("I'm",font=("Arial",48,"normal"))
+
+import time
+
+print("Wait for 3 seconds...")
+time.sleep(3)
+print("Done waiting!")
+
+reset()
+t.clear()
+
+screen= turtle.Screen()
+t=turtle.Turtle()
+t.color("Blue")
+t.hideturtle()
+
+t.penup()
+t.goto(-100,0)
+t.write ("Michael",font=("Arial",48,"normal"))
+
 done()
