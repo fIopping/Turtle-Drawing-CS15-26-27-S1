@@ -1,0 +1,23 @@
+import turtle
+t=turtle.Turtle()
+t.speed(3)
+for i in range(4):
+    t.color("green")
+    t.forward(100)
+    t.left(90)
+t.left(90)
+t.forward(100)
+for i in range(3):
+    t.color("purple")
+    t.right(45)
+    t.forward(42.9)
+t.color("blue")
+t.right(42.9)
+t.penup()
+t.forward(50)
+t.right(90)
+t.pendown()
+t.forward(50)
+t.right(90)
+t.forward(53)
+turtle.done()

@@ -1,5 +1,6 @@
 import turtle
 from turtle import *
+t_s = 3
 letter_size = 30
 gap = 10
 
@@ -73,8 +74,8 @@ t.write ("I'm",font=("Arial",48,"normal"))
 
 import time
 
-print("Wait for 3 seconds...")
-time.sleep(3)
+print("Wait for 2 seconds...")
+time.sleep(2)
 print("Done waiting!")
 
 reset()
@@ -89,4 +90,48 @@ t.penup()
 t.goto(-100,0)
 t.write ("Michael",font=("Arial",48,"normal"))
 
-done()
+reset()
+print("Wait for 2 seconds...")
+time.sleep(2)
+print("Done waiting!")
+t.clear()
+
+screen= turtle.Screen()
+t=turtle.Turtle()
+t.color("Orange")
+t.hideturtle()
+
+t.penup()
+t.goto(-100,0)
+t.write ("This my house",font=("Arial",48,"normal"))
+
+reset()
+print("Wait for 2 seconds...")
+time.sleep(2)
+print("Done waiting!")
+t.clear()
+
+
+import turtle
+t=turtle.Turtle()
+t.speed(t_s)
+for i in range(4):
+    t.color("green")
+    t.forward(100)
+    t.left(90)
+t.left(90)
+t.forward(100)
+for i in range(3):
+    t.color("purple")
+    t.right(45)
+    t.forward(42.9)
+t.color("yellow")
+t.right(42.9)
+t.penup()
+t.forward(50)
+t.right(90)
+t.pendown()
+t.forward(50)
+t.right(90)
+t.forward(53)
+turtle.done()
