@@ -1,10 +1,12 @@
 import turtle
+t=turtle.Turtle()
 from turtle import *
 t_s = 3
 letter_size = 30
 gap = 10
 
 # H
+t.color("purple")
 pendown()
 left(90)
 forward(letter_size * 2)
@@ -19,6 +21,7 @@ penup()
 forward(gap)
 
 # e
+t.color("blue")
 pendown()
 left(90)
 forward(letter_size)
@@ -36,6 +39,7 @@ penup()
 forward(gap)
 
 # l
+t.color("red")
 pendown()
 left(90)
 forward(letter_size * 2)
@@ -44,6 +48,7 @@ penup()
 forward(gap)
 
 # l
+t.color("yellow")
 pendown()
 right(90)
 forward(letter_size * 2)
@@ -52,6 +57,7 @@ penup()
 forward(gap)
 
 # o
+t.color("green")
 pendown()
 forward(letter_size)
 left(90)
@@ -134,4 +140,34 @@ t.pendown()
 t.forward(50)
 t.right(90)
 t.forward(53)
+t.penup()
+t.color("red")
+t.forward(28)
+t.pendown()
+t.forward(25)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(53.8)
+t.right(90)
+t.penup()
+t.forward(25)
+t.right(90)
+t.forward(60)
+t.pendown()
+t.color("grey")
+t.forward(35)
+t.right(90)
+t.penup()
+t.forward(20)
+t.right(90)
+t.pendown()
+t.forward(35)
+t.right(90)
+t.penup()
+t.forward(40)
+t.right(90)
+t.pendown()
+t.forward(35)
+t.hideturtle()
 turtle.done()
